@@ -90,6 +90,7 @@ fun RideScreen(
             ) {
                 Text("Get Fare Estimate")
             }
+
             when (uiState) {
                 is RideUiState.FareEstimate -> {
                     val estimate = (uiState as RideUiState.FareEstimate).estimate
