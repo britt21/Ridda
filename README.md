@@ -19,7 +19,8 @@ A simple ride-hailing demo app built with Kotlin, Jetpack Compose, MVVM, Hilt, a
 1. **Clone the repository**
 2. **Open in Android Studio** (Giraffe or newer recommended)
 3. **Sync Gradle**
-4. **Run on emulator or device** (minSdk 24)
+4. **Got to Manifest and paster Google map API Key in line 30**
+5. **Run on emulator or device** (minSdk 24)
 
 ## How to Run the App
 - Launch the app
