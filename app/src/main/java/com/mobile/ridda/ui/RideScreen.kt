@@ -31,7 +31,7 @@ fun RideScreen(
     val uiState by viewModel.uiState.collectAsState()
 
     Box(modifier = Modifier.fillMaxSize()) {
-        // Map as background
+
         val lagos = LatLng(6.544425604781051, 3.374288248053532)
         val singaporeMarkerState = rememberMarkerState(position = lagos)
         val cameraPositionState = rememberCameraPositionState {
@@ -44,12 +44,12 @@ fun RideScreen(
         ) {
             Marker(
                 state = singaporeMarkerState,
-                title = "Singapore",
-                snippet = "Marker in Singapore"
+                title = "Nigeria",
+                snippet = "Marker in Nigeria"
             )
         }
 
-        // Overlay UI on top of the map
+
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -58,7 +58,7 @@ fun RideScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Bottom
         ) {
-            // Add any input fields and buttons you want on top of the map here
+
             OutlinedTextField(
                 value = pickupText,
                 onValueChange = { pickupText = it },

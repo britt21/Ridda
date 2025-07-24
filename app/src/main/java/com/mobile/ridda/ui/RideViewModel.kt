@@ -79,7 +79,7 @@ class RideViewModel @Inject constructor(
 
     fun loadRideHistory() {
         viewModelScope.launch {
-//            _rideHistory.value = repository.getRideHistory()
+            _rideHistory.value = repository.getRideHistory()
         }
     }
 
